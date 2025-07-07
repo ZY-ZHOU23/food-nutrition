@@ -1,0 +1,191 @@
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.formGroup label {
+  font-weight: var(--font-weight-bold);
+  flex-shrink: 0;
+}
+
+.formGroup input {
+  flex-grow: 1;
+}
+
+.primaryButton {
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+}
+
+.primaryButton:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.listItem {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+}
+
+.ingredientSummary {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
+}
+
+.ingredientName {
+  flex-grow: 1;
+  margin-right: 1rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.ingredientCalories {
+  color: var(--color-text-muted);
+  font-weight: var(--font-weight-bold);
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+.details {
+  width: 100%;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.quantityEditor {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.quantityInput {
+  width: 70px;
+  text-align: right;
+  padding: 0.5rem 0.75rem;
+  border: 2px solid var(--color-border);
+  border-radius: var(--border-radius);
+  background-color: var(--color-surface);
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: var(--font-weight-medium);
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.quantityInput:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  background-color: color-mix(in srgb, var(--color-primary) 2%, var(--color-surface));
+}
+
+.quantityInput:hover:not(:focus) {
+  border-color: color-mix(in srgb, var(--color-primary) 40%, var(--color-border));
+}
+
+.removeButton {
+  background: transparent;
+  border: none;
+  color: var(--color-text-muted);
+  font-size: 1.5rem;
+  line-height: 1;
+  padding: 0 0.5rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.removeButton:hover {
+  color: var(--color-primary);
+}
+
+.listItemClickable {
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.listItemClickable:hover {
+  background-color: color-mix(in srgb, var(--color-primary) 5%, transparent);
+  border-color: color-mix(in srgb, var(--color-primary) 30%, transparent);
+}
+
+.dishInfo {
+  flex-grow: 1;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.dishInfo small {
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.sortingControls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.sortingControls label {
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
+
+.sortingControls select {
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: var(--font-weight-medium);
+  padding: 0.75rem 2.5rem 0.75rem 1rem;
+  border: 2px solid var(--color-border);
+  border-radius: var(--border-radius);
+  background-color: var(--color-surface);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 0.75rem center;
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  appearance: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  min-width: 200px;
+}
+
+.sortingControls select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  background-color: color-mix(in srgb, var(--color-primary) 2%, var(--color-surface));
+}
+
+.sortingControls select:hover:not(:focus) {
+  border-color: color-mix(in srgb, var(--color-primary) 40%, var(--color-border));
+  background-color: color-mix(in srgb, var(--color-primary) 1%, var(--color-surface));
+} 

@@ -1,0 +1,61 @@
+.form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.input {
+  flex-grow: 1;
+}
+
+.button {
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+}
+
+.button:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.resultsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.resultsItem {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.resultsItem:hover {
+  background-color: color-mix(in srgb, var(--color-primary) 5%, transparent);
+  border-color: color-mix(in srgb, var(--color-primary) 30%, transparent);
+}
+
+.selectedFoodContainer {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background-color: color-mix(in srgb, var(--color-primary) 5%, transparent);
+  border-radius: var(--border-radius);
+  border: 1px solid color-mix(in srgb, var(--color-primary) 20%, transparent);
+}
+
+.addButton {
+  margin-top: 1rem;
+}
+
+.errorText {
+  color: #ef4444; /* A reddish color for errors */
+  background-color: #fef2f2; /* A light red background */
+  border: 1px solid #fecaca;
+  border-radius: var(--border-radius);
+  padding: 0.75rem 1rem;
+  margin-top: 1rem;
+} 
